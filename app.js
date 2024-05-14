@@ -15,6 +15,30 @@ const app = Vue.createApp({
       // console.log(this.$refs.userText);
     },
   },
+  beforeCreate() {
+    console.log('beforeCreate()');
+  },
+  created() {
+    console.log('created()');
+  },
+  beforeMount() {
+    console.log('beforeMount()');
+  },
+  mounted() {
+    console.log('mounted()');
+  },
+  beforeUpdate() {
+    console.log('beforeUpdate()');
+  },
+  updated() {
+    console.log('updated()');
+  },
+  beforeUnmount() {
+    console.log('beforeUnmount()');
+  },
+  unmounted() {
+    console.log('unmounted()');
+  },
 });
 
 app.mount("#app");
@@ -50,4 +74,4 @@ const proxy = new Proxy(data, handler);
 
 proxy.message = "Hello!!!!";
 
-console.log(proxy.longMessage);
+// console.log(proxy.longMessage);
