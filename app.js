@@ -15,7 +15,7 @@ const app = Vue.createApp({
   },
 });
 
-app.mount('#app');
+app.mount("#app");
 
 const app2 = Vue.createApp({
   template: `
@@ -28,7 +28,7 @@ const app2 = Vue.createApp({
   },
 });
 
-app2.mount('#app2')
+app2.mount("#app2")
 
 const data = {
   message: "Hello!",
